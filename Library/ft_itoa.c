@@ -6,7 +6,7 @@
 /*   By: dvirgile <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 18:08:18 by dvirgile          #+#    #+#             */
-/*   Updated: 2015/12/03 17:47:51 by dvirgile         ###   ########.fr       */
+/*   Updated: 2016/01/07 16:00:39 by dvirgile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char		*ft_itoa(int n)
 	int		signe;
 
 	signe = ft_signe(n);
-	if (!(s = (char *)malloc(sizeof(s) * (ft_lenght(n) + signe + 1))))
+	if (!(s = ft_strnew(ft_lenght(n) + signe)))
 		return (NULL);
 	if (ft_signe(n) == 1)
 		n = -n;

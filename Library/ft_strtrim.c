@@ -6,7 +6,7 @@
 /*   By: dvirgile <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 17:35:49 by dvirgile          #+#    #+#             */
-/*   Updated: 2015/12/03 17:33:28 by dvirgile         ###   ########.fr       */
+/*   Updated: 2016/01/07 15:57:42 by dvirgile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,10 @@ char		*ft_strtrim(char const *s)
 
 	l = 0;
 	e = 0;
-	i = 0;
+	i = ft_strlen(s);
 	if (s == NULL)
 		return (NULL);
-	while (s[i])
-		i++;
-	if (!(s2 = (char *)malloc(sizeof(char) * i)))
+	if (!(s2 = ft_strnew(ft_strlen(s))))
 		return (NULL);
 	while (s[e] == ' ' || s[e] == '\n' || s[e] == '\t')
 		e++;

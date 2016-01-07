@@ -6,7 +6,7 @@
 /*   By: dvirgile <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 17:31:59 by dvirgile          #+#    #+#             */
-/*   Updated: 2015/12/02 14:26:21 by dvirgile         ###   ########.fr       */
+/*   Updated: 2016/01/07 15:40:50 by dvirgile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char			*ft_strsub(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	e = 0;
 	i = start;
-	fraiche = (char *)malloc(sizeof(s) * len);
+	fraiche = ft_strnew(len);
 	if (fraiche == NULL)
 		return (NULL);
 	while (i < start + len)

@@ -6,7 +6,7 @@
 /*   By: dvirgile <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 15:19:33 by dvirgile          #+#    #+#             */
-/*   Updated: 2015/12/03 17:40:44 by dvirgile         ###   ########.fr       */
+/*   Updated: 2016/01/07 15:36:53 by dvirgile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	i = 0;
 	ret = 0;
-	if (!s1 || !s2 || n == 0)
-		return (0);
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
 	while (i < n)
