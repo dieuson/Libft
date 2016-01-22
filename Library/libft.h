@@ -6,7 +6,7 @@
 /*   By: dvirgile <dvirgile@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/17 19:17:14 by dvirgile          #+#    #+#             */
-/*   Updated: 2015/12/24 10:04:24 by dvirgile         ###   ########.fr       */
+/*   Updated: 2016/01/20 13:51:56 by dvirgile         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,12 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+void			ft_putcolor(char *str, char *color);
+void			ft_lstadd_end(t_list **alst, t_list *new);
+int				ft_sqrt(int nb);
+char			*ft_mem_realloc(char *old, size_t size);
+int				ft_power(int nb, int power);
+char			*ft_strrev(char *str);
 
 #endif
